@@ -5,6 +5,7 @@ body {
 main {
   margin-right: 12em;
   margin-left: 12em;
+  padding-bottom: 55px;
 }
 
 .navbar ul {
@@ -36,7 +37,7 @@ main {
   background-color: #111;
 }
 
-.projects {
+.projects, .interests {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, max-content));
   justify-content: center;
@@ -53,11 +54,25 @@ main {
   flex-direction: column;
   border-radius: 15px;
 }
+
+.interests-item {
+  background-color: pink;
+  max-width: 350px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+        height: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+} 
+
 .item-icon {
   height: 60%;
 }
 
-.item-label {
+.projects-item-label {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,6 +81,15 @@ main {
   text-align: center;
   gap: 1em;
 }
+
+.interests-item-label {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+}
+
+
 
 footer {
   background-color: #333;
@@ -78,6 +102,14 @@ footer {
   text-align: center;
   padding: 20px;
 } 
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 
 @media (max-width: 1024px) {
