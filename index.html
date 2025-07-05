@@ -3,112 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documaent</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="navbar">
         <ul>
-        <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
         <li><a href="#"><i class="fa-solid fa-phone"></i> Contact</a></li>
+        <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
         <li><a href="#"><i class="fa-solid fa-info"></i> About</a></li>
         </ul>
     </header>
     <main>
-        <div class="avatar-container">
-            <img src="assets/profile-picture.png" alt="Profile Picture" class="avatar">
-            <div class="avatar-label">
-                <h2>John Doe</h2>
-                <p>Web Developer</p>
+        <div class="hero">
+            <h1>My Personal Website</h1>
+            <p>Welcome to my personal website. Here you can find information about me, my work, and my interests.</p>
+            <a draggable="false" href="#about-me">
+                <img draggable="false" src="assets/chevron-down.png" alt="Scroll Down Arrow" style="filter: invert();">
+            </a>
+        </div>
+        <div id="about-me" class="about-me">
+            <div class="avatar-container">
+                <img src="assets/profile-picture.png" alt="Profile Picture" class="avatar">
+                <div class="avatar-label">
+                    <h2 style="margin: 0">John Doe</h2>
+                    <p style="margin: 0; font-size: large; text-align: center;">Web Developer</p>
+                </div>
+            </div>
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia laborum tempore perspiciatis quisquam quasi in, necessitatibus ipsa excepturi aliquid cumque natus nemo iure, id saepe, quia quaerat est laboriosam praesentium!</p>
             </div>
         </div>
-        <h1>Welcome to my Website</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium harum quibusdam atque? Ea, minus dolores tenetur aspernatur ratione labore distinctio numquam doloremque quaerat vel exercitationem mollitia nisi possimus aperiam voluptas?</p>
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia laborum tempore perspiciatis quisquam quasi in, necessitatibus ipsa excepturi aliquid cumque natus nemo iure, id saepe, quia quaerat est laboriosam praesentium!</p>
-        <h1>Portfolio</h1>
+        <div class="skills-and-interests">
+            <div class="skills-and-interests-container">
+                <div class="skills-container">
+                    <div class="skills-content">
+                        <div class="skills-label">
+                            <h1>Technical Skills</h1>
+                        </div>
+                        <div class="skills-item-container">
+                            <div class="skill-item">
+                                <div class="item-icon">
+                                    <img src="Python_logo.svg" width="100%" height="100%">
+                                </div>
+                                <div class="skill-item-label">
+                                    <span><b>Python</b></span>
+                                    <span>Experienced in scripting, automation, and data processing using Python.</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="item-icon">
+                                    <img src="HTML5_logo.svg" width="100%" height="100%">
+                                </div>
+                                <div class="skill-item-label">
+                                    <span><b>HTML</b></span>
+                                    <span>Proficient in creating structured, semantic, and accessible web content.</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="item-icon">
+                                    <img src="CSS3_logo.svg" width="100%" height="100%">
+                                </div>
+                                <div class="skill-item-label">
+                                    <span><b>CSS</b></span>
+                                    <span>Skilled in crafting responsive and visually engaging layouts with modern CSS.</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="item-icon">
+                                    <img src="assets/JavaScript_logo.svg" width="100%" height="100%" alt="JavaScript logo featuring bold black JS letters on a bright yellow background, conveying a modern and energetic tone">
+                                </div>
+                                <div class="skill-item-label">
+                                    <span><b>JavaScript</b></span>
+                                    <span>Capable of building dynamic, interactive web interfaces using vanilla JS.</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="item-icon">
+                                    <img src="assets/docker-logo.svg" width="100%" height="100%">
+                                </div>
+                                <div class="skill-item-label">
+                                    <span><b>Docker</b></span>
+                                    <span>Experienced in containerizing apps and managing environments with Docker.</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="item-icon">
+                                    <img src="assets/React-icon.svg" width="100%" height="100%">
+                                </div>
+                                <div class="skill-item-label">
+                                    <span><b>React</b></span>
+                                    <span>Comfortable with building single-page apps and reusable components using React.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="interests-container">
+                    <div class="interests-content">
+                        <div class="interests-label">
+                            <h1>Personal Interests</h1>
+                        </div>
+                        <div class="interests-item-container">
+                            <div class="interests-item">
+                                <div class="item-icon">
+                                    <img src="assets/game-controller.png" height="100%">
+                                </div>
+                                <div class="interests-item-label">
+                                    <span><b>Gaming</b></span>
+                                    <span>Passionate about gaming and game design mechanics.</span>
+                                </div>
+                            </div>
+                            <div class="interests-item">
+                                <div class="item-icon">
+                                    <img src="assets/programming.png" height="100%">
+                                </div>
+                                <div class="interests-item-label">
+                                    <span><b>Programming</b></span>
+                                    <span>Enjoy solving problems and building software projects for fun and learning.</span>
+                                </div>
+                            </div>
+                            <div class="interests-item">
+                                <div class="item-icon">
+                                    <img src="assets/musical-note.png" height="100%">
+                                </div>
+                                <div class="interests-item-label">
+                                    <span><b>Music</b></span>
+                                    <span>Love exploring music and discovering new genres.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="projects">
-            <div class="project-item">
-                <div class="item-icon">
-                    <img src="Python_logo.svg" width="100%" height="100%">
+            <h1>Projects</h1>
+            <div class="projects-container">
+                <div class="projects-item-container">
+                    <div class="project-item">
+                        <img src="assets/project1.png" alt="Project 1">
+                        <h2>Project 1</h2>
+                        <p>Description of project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/project2.png" alt="Project 2">
+                        <h2>Project 2</h2>
+                        <p>Description of project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/project3.png" alt="Project 3">
+                        <h2>Project 3</h2>
+                        <p>Description of project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </div>
-                <div class="projects-item-label">
-                    <span><b>Python</b></span>
-                    <span>Fluent in HTML and other programming language</span>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="item-icon">
-                    <img src="HTML5_logo.svg" width="100%" height="100%">
-                </div>
-                <div class="projects-item-label">
-                    <span><b>HTML</b></span>
-                    <span>Fluent in HTML and other programming language</span>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="item-icon">
-                    <img src="CSS3_logo.svg" width="100%" height="100%">
-                </div>
-                <div class="projects-item-label">
-                    <span><b>CSS</b></span>
-                    <span>Fluent in HTML and other programming language</span>
-                </div>
-            </div>
-            <div class="project-item">
-                <div class="item-icon">
-                    <img src="JavaScript_logo.svg" width="100%" height="100%">
-                </div>
-                <div class="projects-item-label">
-                    <span><b>JavaScript</b></span>
-                    <span>Fluent in HTML and other programming language</span>
-                </div>
-            </div>
         </div>
-        <h1>My Interests</h1>
-        <div class="interests">
-            <div class="interests-item">
-                <div class="item-icon">
-                    <img src="assets/game-controller.png" width="100%" height="100%">
-                </div>
-                <div class="interests-item-label">
-                    <span><b>Gaming</b></span>
-                    <span>Fluent in HTML and other programming language</span>
-                </div>
-            </div>
-            <div class="interests-item">
-                <div class="item-icon">
-                    <img src="assets/programming.png" width="100%" height="100%">
-                </div>
-                <div class="interests-item-label">
-                    <span><b>Programming</b></span>
-                    <span>Fluent in HTML and other programming language</span>
-                </div>
-            </div>
-            <div class="interests-item">
-                <div class="item-icon">
-                    <img src="assets/musical-note.png" width="100%" height="100%">
-                </div>
-                <div class="interests-item-label">
-                    <span><b>Music</b></span>
-                    <span>Fluent in HTML and other programming language</span>
-                </div>
-            </div>
-        </div>
-        <h1>My work</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, a dolores? Facere, accusamus? Provident deserunt aspernatur officia cumque, saepe ab! Commodi deserunt rerum voluptates quam voluptas repudiandae obcaecati illum dolorem?</p>
-        <ul>
-            <li>ABC</li>
-            <li>XYZ</li>
-            <li>123</li>
-            <li>456</li>
-        </ul>
-        <h1>Description</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ducimus natus praesentium, ex eius, aliquid libero id sunt laboriosam ea exercitationem neque perspiciatis voluptates odio eligendi, recusandae ab rerum nihil!</p>
     </main>
     <footer>
-        &copy 2025 ABC. Icons provided by <a href="https://www.flaticon.com/">Flaticon</a>
+        &copy 2025 ABC. Icons provided by <a href="https://www.flaticon.com/" target="_blank">Flaticon</a>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 </body>
 </html>
