@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <ul>
+            <div class="link-item">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="active"><a href="projects.html"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </div>
+            <li><button id="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button></li>
+        </ul>
+    </header>
+    <main>
+        <section class="projects" style="height: auto; padding: 5em 2em;">
+            <h1>All Projects</h1>
+            <div class="projects-container">
+                <div class="projects-item-container">
+                    <div class="project-item">
+                        <img src="assets/icons/list.png" alt="Project 1">
+                        <h2>Todo App</h2>
+                        <p>A minimalistic, mobile-first to-do list app built with React. Includes local storage support and custom theme toggling.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/icons/script.png" alt="Project 2">
+                        <h2>File Duplicate Finder</h2>
+                        <p>A Python tool that scans folders to detect and remove duplicate files using content hashing. Helps free up space and keep your storage organized.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/icons/headset.png" alt="Project 3">
+                        <h2>Music Player</h2>
+                        <p>A simple desktop music player built with Python and Qt. Supports drag-and-drop loading and features a custom minimal UI for local audio playback.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/icons/cloudy.png" alt="Project 3">
+                        <h2>Weather App</h2>
+                        <p>Application that fetches real-time data from a public API. Built with React, it features a clean UI and supports multiple locations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>

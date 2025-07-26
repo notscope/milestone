@@ -10,7 +10,7 @@ ScrollReveal().reveal('.skill-item', {
 // Reveal interest items
 ScrollReveal().reveal('.interests-item', {
   delay: 300,
-  origin: 'left',
+  origin: 'bottom',
   distance: '40px',
   duration: 800,
   reset: false
@@ -19,7 +19,7 @@ ScrollReveal().reveal('.interests-item', {
 // Reveal project items
 ScrollReveal().reveal('.project-item', {
   delay: 400,
-  origin: 'right',
+  origin: 'bottom',
   distance: '40px',
   duration: 800,
   reset: false
@@ -32,4 +32,24 @@ ScrollReveal().reveal('.about-me', {
   distance: '30px',
   duration: 800,
   reset: false
+});
+
+
+const toggleButton = document.getElementById("theme-toggle");
+const body = document.body;
+
+if (localStorage.getItem("theme") === "light") {
+    body.classList.add("light-mode");
+    toggleButton.innerHTML = '<i class="fa-solid fa-sun"></i>';
+}
+
+toggleButton.addEventListener("click", () => { 
+    body.classList.toggle("light-mode");
+    const isLightMode = body.classList.contains("light-mode");
+
+    localStorage.setItem("theme", isLightMode ? "light" : "dark");
+
+    toggleButton.innerHTML = isLightMode
+        ? '<i class="fa-solid fa-sun"></i>'
+        : '<i class="fa-solid fa-moon"></i>';
 });

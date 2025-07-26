@@ -13,22 +13,25 @@
 <body>
     <header class="navbar">
         <ul>
-        <li><a href="#"><i class="fa-solid fa-phone"></i> Contact</a></li>
-        <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="#"><i class="fa-solid fa-info"></i> About</a></li>
+            <div class="link-item">
+                <li class="active"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="projects.html"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </div>
+            <li><button id="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button></li>
         </ul>
     </header>
     <main>
         <div class="hero">
             <h1>My Personal Website</h1>
             <p>Welcome to my personal website. Here you can find information about me, my work, and my interests.</p>
-            <a draggable="false" href="#about-me">
-                <img draggable="false" src="assets/chevron-down.png" alt="Scroll Down Arrow" style="filter: invert();">
+            <a class="arrow" draggable="false" href="#about-me">
+                <img draggable="false" src="assets/icons/chevron-down.png" alt="Scroll Down Arrow" style="filter: invert();">
             </a>
         </div>
         <div id="about-me" class="about-me">
             <div class="avatar-container">
-                <img src="assets/profile-picture.png" alt="Profile Picture" class="avatar">
+                <img src="assets/icons/profile-picture.png" alt="Profile Picture" class="avatar">
                 <div class="avatar-label">
                     <h2 style="margin: 0">John Doe</h2>
                     <p style="margin: 0; font-size: large; text-align: center;">Web Developer</p>
@@ -49,55 +52,55 @@
                         <div class="skills-item-container">
                             <div class="skill-item">
                                 <div class="item-icon">
-                                    <img src="Python_logo.svg" width="100%" height="100%">
+                                    <img src="assets/logo/Python_logo.svg">
                                 </div>
                                 <div class="skill-item-label">
-                                    <span><b>Python</b></span>
+                                    <h2>Python</h2>
                                     <span>Experienced in scripting, automation, and data processing using Python.</span>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="item-icon">
-                                    <img src="HTML5_logo.svg" width="100%" height="100%">
+                                    <img src="assets/logo/HTML5_logo.svg">
                                 </div>
                                 <div class="skill-item-label">
-                                    <span><b>HTML</b></span>
+                                    <h2>HTML</h2>
                                     <span>Proficient in creating structured, semantic, and accessible web content.</span>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="item-icon">
-                                    <img src="CSS3_logo.svg" width="100%" height="100%">
+                                    <img src="assets/logo/CSS3_logo.svg">
                                 </div>
                                 <div class="skill-item-label">
-                                    <span><b>CSS</b></span>
+                                    <h2>CSS</h2>
                                     <span>Skilled in crafting responsive and visually engaging layouts with modern CSS.</span>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="item-icon">
-                                    <img src="assets/JavaScript_logo.svg" width="100%" height="100%" alt="JavaScript logo featuring bold black JS letters on a bright yellow background, conveying a modern and energetic tone">
+                                    <img src="assets/logo/JavaScript_logo.svg"  alt="JavaScript logo featuring bold black JS letters on a bright yellow background, conveying a modern and energetic tone">
                                 </div>
                                 <div class="skill-item-label">
-                                    <span><b>JavaScript</b></span>
+                                    <h2>JavaScript</h2>
                                     <span>Capable of building dynamic, interactive web interfaces using vanilla JS.</span>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="item-icon">
-                                    <img src="assets/docker-logo.svg" width="100%" height="100%">
+                                    <img src="assets/logo/docker-logo.svg" >
                                 </div>
                                 <div class="skill-item-label">
-                                    <span><b>Docker</b></span>
+                                    <h2>Docker</h2>
                                     <span>Experienced in containerizing apps and managing environments with Docker.</span>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <div class="item-icon">
-                                    <img src="assets/React-icon.svg" width="100%" height="100%">
+                                    <img src="assets/logo/React-icon.svg" >
                                 </div>
                                 <div class="skill-item-label">
-                                    <span><b>React</b></span>
+                                    <h2>React</h2>
                                     <span>Comfortable with building single-page apps and reusable components using React.</span>
                                 </div>
                             </div>
@@ -112,28 +115,28 @@
                         <div class="interests-item-container">
                             <div class="interests-item">
                                 <div class="item-icon">
-                                    <img src="assets/game-controller.png" height="100%">
+                                    <img src="assets/icons/game-controller.png">
                                 </div>
                                 <div class="interests-item-label">
-                                    <span><b>Gaming</b></span>
+                                    <h3>Gaming</h3>
                                     <span>Passionate about gaming and game design mechanics.</span>
                                 </div>
                             </div>
                             <div class="interests-item">
                                 <div class="item-icon">
-                                    <img src="assets/programming.png" height="100%">
+                                    <img src="assets/icons/programming.png">
                                 </div>
                                 <div class="interests-item-label">
-                                    <span><b>Programming</b></span>
+                                    <h3>Programming</h3>
                                     <span>Enjoy solving problems and building software projects for fun and learning.</span>
                                 </div>
                             </div>
                             <div class="interests-item">
                                 <div class="item-icon">
-                                    <img src="assets/musical-note.png" height="100%">
+                                    <img src="assets/icons/musical-note.png">
                                 </div>
                                 <div class="interests-item-label">
-                                    <span><b>Music</b></span>
+                                    <h3>Music</h3>
                                     <span>Love exploring music and discovering new genres.</span>
                                 </div>
                             </div>
@@ -143,29 +146,35 @@
             </div>
         </div>
         <div class="projects">
-            <h1>Projects</h1>
+            <h1>Featured Projects</h1>
             <div class="projects-container">
                 <div class="projects-item-container">
                     <div class="project-item">
-                        <img src="assets/project1.png" alt="Project 1">
-                        <h2>Project 1</h2>
-                        <p>Description of project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="assets/icons/list.png" alt="Project 1">
+                        <h2>Todo App</h2>
+                        <p>A minimalistic, mobile-first to-do list app built with React. Includes local storage support and custom theme toggling.</p>
                     </div>
                     <div class="project-item">
-                        <img src="assets/project2.png" alt="Project 2">
-                        <h2>Project 2</h2>
-                        <p>Description of project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="assets/icons/script.png" alt="Project 2">
+                        <h2>File Duplicate Finder</h2>
+                        <p>A Python tool that scans folders to detect and remove duplicate files using content hashing. Helps free up space and keep your storage organized.</p>
                     </div>
                     <div class="project-item">
-                        <img src="assets/project3.png" alt="Project 3">
-                        <h2>Project 3</h2>
-                        <p>Description of project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="assets/icons/headset.png" alt="Project 3">
+                        <h2>Music Player</h2>
+                        <p>A simple desktop music player built with Python and Qt. Supports drag-and-drop loading and features a custom minimal UI for local audio playback.</p>
                     </div>
+                    <a href="projects.html" class="project-item more-projects">
+                        <h2>More Projects</h2>
+                        <p class="more-projects-arrow"><i class="fa-solid fa-arrow-right"></i></p>
+                        <p>See more of my projects here.</p>
+                    </a>
                 </div>
+            </div>
         </div>
     </main>
     <footer>
-        &copy 2025 ABC. Icons provided by <a href="https://www.flaticon.com/" target="_blank">Flaticon</a>
+        &copy 2025 John Doe. Icons provided by <a href="https://www.flaticon.com/" target="_blank">Flaticon</a>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
